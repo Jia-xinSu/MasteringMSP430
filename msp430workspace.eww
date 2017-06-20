@@ -3,5 +3,8 @@
     <project>
         <path>$WS_DIR$\EmptyProject\EmptyProject.ewp</path>
     </project>
+    <project>
+        <path>$WS_DIR$\UCS\practice1\practice1.ewp</path>
+    </project>
     <batchBuild />
 </workspace>
