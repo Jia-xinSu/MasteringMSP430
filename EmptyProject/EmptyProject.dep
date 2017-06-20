@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>3755549278</fileChecksum>
+    <fileChecksum>2372866919</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -19,7 +19,24 @@
             <file>$PROJ_DIR$\Debug\Exe\EmptyProject.hex</file>
             <file>$TOOLKIT_DIR$\inc\in430.h</file>
             <file>$TOOLKIT_DIR$\inc\msp430f149.h</file>
+            <file>$PROJ_DIR$\..\GPIO\practice2\main.c</file>
+            <file>$PROJ_DIR$\..\UCS\practice1\main.c</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\EmptyProject.d43</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 2 5 1 4</file>
+                </tool>
+            </inputs>
+        </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
@@ -45,12 +62,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\EmptyProject.hex</name>
-            <outputs>
-                <tool>
-                    <name>XLINK</name>
-                    <file> 3</file>
-                </tool>
-            </outputs>
             <inputs>
                 <tool>
                     <name>XLINK</name>
@@ -63,7 +74,7 @@
             <outputs>
                 <tool>
                     <name>XLINK</name>
-                    <file> 11 3</file>
+                    <file> 6 3 11</file>
                 </tool>
                 <tool>
                     <name>ULP430</name>
@@ -71,6 +82,10 @@
                 </tool>
             </outputs>
         </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>

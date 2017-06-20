@@ -1,11 +1,11 @@
 /**
- *@文件：UCS/practice1/main.c
+ *@文件：UCS/practice2/main.c
  *@作者：粟佳鑫
  *@版本：V1.0.0
  *@日期2017年6月20日
- *@简介：配置MSP430f149的时钟模块
+ *@简介：使用GPIO口的输出功能
  *       将MCLK=8MHz，SMCLK=1MHz，ACLK=32.768KHz
- *       由P5口将对应时钟信号输出
+ *       似的P6.0口接的LED灯1s取反一次，闪烁
  *       
  *@编译环境：IAR for 430 7.10.3
  */
@@ -16,7 +16,7 @@
 /**
  *添加宏定义
  */
-
+int state=1;
 /**
  *申明函数
  */
@@ -36,16 +36,15 @@ int main( void )
   //开启振荡器错误中断
   IE1|=OFIE;
   IE1&=~(OFIE);
-  
   //开启总中断
   __bis_SR_register(GIE);
-  //设置P5.4，P5.5，P5.6为特殊功能口
-  P5SEL|=BIT4+BIT5+BIT6;
-  //设置P5.4，P5.5，P5.6为输出模式
-  P5OUT|=BIT4+BIT5+BIT6;
+  while(state);
+  P6DIR|=BIT0;
   while(1)
   {
-    //加入主程序代码
+  //加入主程序代码
+    P6OUT^=BIT0;
+    __delay_cycles(8000000);
   }
 }       
 
@@ -65,4 +64,5 @@ void NMI_ISR(void)
   }
   //等待时钟启动，标记位不再置1
   while(IFG1&OFIFG);
+  state=0;
 }

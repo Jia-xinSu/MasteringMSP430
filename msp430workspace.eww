@@ -6,5 +6,11 @@
     <project>
         <path>$WS_DIR$\UCS\practice1\practice1.ewp</path>
     </project>
+    <project>
+        <path>$WS_DIR$\GPIO\practice2\practice2.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\GPIO\practice3\practice3.ewp</path>
+    </project>
     <batchBuild />
 </workspace>

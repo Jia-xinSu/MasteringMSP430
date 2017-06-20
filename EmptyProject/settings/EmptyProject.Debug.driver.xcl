@@ -18,15 +18,55 @@
 
 "0xFFE0" 
 
-"--odd_word_check" 
-
 "-d" 
 
-"sim" 
+"fet" 
 
-"--derivativeSim" 
+"--erase_main" 
+
+"--derivative" 
 
 "MSP430F149" 
+
+"--protocol" 
+
+"4wire" 
+
+"--eem" 
+
+"EMEX_MEDIUM" 
+
+"--port" 
+
+"Automatic" 
+
+"--connection" 
+
+"ti_usb" 
+
+"--use_emulated_breakpoints" 
+
+"--settlingtime=0" 
+
+"--msp430_dll" 
+
+"msp430.dll" 
+
+"--vccDefault" 
+
+"3.3" 
+
+"--jtag_speed" 
+
+"slow" 
+
+"--memtype" 
+
+"F" 
+
+"--cycleCounter" 
+
+"0" 
 
 
 
