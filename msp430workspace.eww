@@ -12,5 +12,11 @@
     <project>
         <path>$WS_DIR$\GPIO\practice3\practice3.ewp</path>
     </project>
+    <project>
+        <path>$WS_DIR$\UART\practice4\practice4.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\UART\practice5\practice5.ewp</path>
+    </project>
     <batchBuild />
 </workspace>

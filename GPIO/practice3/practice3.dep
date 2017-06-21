@@ -5,6 +5,8 @@
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\practice3.ulp</file>
             <file>$PROJ_DIR$\Debug\List\practice3.map</file>
             <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
             <file>$TOOLKIT_DIR$\config\linker\multiplier.xcl</file>
@@ -15,23 +17,45 @@
             <file>$PROJ_DIR$\Debug\Exe\practice3.d43</file>
             <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
             <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-            <file>$PROJ_DIR$\..\practice2\main.c</file>
             <file>$TOOLKIT_DIR$\inc\msp430f149.h</file>
             <file>$TOOLKIT_DIR$\inc\in430.h</file>
-            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\..\UART\practice4\main.c</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11 13 12</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 12 13 11</file>
+                </tool>
+            </inputs>
+        </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\practice3.hex</name>
             <outputs>
                 <tool>
                     <name>XLINK</name>
-                    <file> 0</file>
+                    <file> 2</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>XLINK</name>
-                    <file> 3 2 8 1</file>
+                    <file> 5 4 10 3</file>
                 </tool>
             </inputs>
         </file>
@@ -40,7 +64,7 @@
             <inputs>
                 <tool>
                     <name>XLINK</name>
-                    <file> 3 2 8 1</file>
+                    <file> 5 4 10 3</file>
                 </tool>
             </inputs>
         </file>
@@ -49,32 +73,13 @@
             <outputs>
                 <tool>
                     <name>XLINK</name>
-                    <file> 4 0</file>
+                    <file> 2 6</file>
+                </tool>
+                <tool>
+                    <name>ULP430</name>
+                    <file> 1</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICC430</name>
-                    <file> 8</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICC430</name>
-                    <file> 11 12 9</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 9 12 11</file>
-                </tool>
-            </inputs>
         </file>
     </configuration>
     <configuration>
