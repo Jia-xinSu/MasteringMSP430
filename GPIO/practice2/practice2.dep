@@ -20,6 +20,7 @@
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\practice2.pbd</file>
             <file>$PROJ_DIR$\Debug\Exe\practice2.ulp</file>
+            <file>$PROJ_DIR$\..\..\Timer\practice6\main.c</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\main.c</name>

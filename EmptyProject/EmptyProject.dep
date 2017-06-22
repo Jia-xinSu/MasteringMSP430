@@ -14,7 +14,6 @@
             <file>$TOOLKIT_DIR$\config\linker\multiplier.xcl</file>
             <file>$PROJ_DIR$\Debug\Exe\EmptyProject.d43</file>
             <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\EmptyProject.pbd</file>
             <file>$PROJ_DIR$\Debug\Exe\EmptyProject.ulp</file>
             <file>$PROJ_DIR$\Debug\Exe\EmptyProject.hex</file>
             <file>$TOOLKIT_DIR$\inc\in430.h</file>
